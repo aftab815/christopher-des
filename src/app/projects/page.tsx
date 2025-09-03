@@ -55,7 +55,7 @@ export default function Projects() {
       <main className='relative z-10 container pt-24 sm:pt-28 md:pt-32 lg:pt-36 xl:pt-36 pb-8'>
         <HorizontalScrollContainer ref={scrollContainerRef} onScrollChange={() => {}}>
           {/* Section 1: Our Projects */}
-          <div className='lg:max-w-[900px] lg:min-w-[900px] w-full max-w-[900px] px-4 sm:px-6 md:pl-6 lg:pl-8 text-center md:text-left space-y-3'>
+          <div className='lg:max-w-[900px] lg:min-w-[900px] w-full max-w-[900px] px-4 sm:px-6 md:pl-6 lg:pl-8 md:text-left text-center space-y-3'>
             <h1 className='text-[#d5d5c8] font-serif text-[24px] uppercase tracking-wider leading-tight'>OUR PROJECTS</h1>
             
             <div className='space-y-4'>
@@ -91,7 +91,7 @@ export default function Projects() {
           </div>
 
           {/* Section 2: The Quarry Details */}
-          <div className='lg:max-w-[900px] lg:min-w-[900px] w-full max-w-[900px] px-4 sm:px-6 md:pl-6 lg:pl-8 text-center md:text-left space-y-3'>
+          <div className='lg:max-w-[900px] lg:min-w-[900px] w-full max-w-[900px] px-4 sm:px-6 md:pl-6 lg:pl-8 md:text-left text-center space-y-3'>
             <h1 className='text-[#d5d5c8] font-serif text-[24px] uppercase tracking-wider leading-tight'>THE QUARRY</h1>
             
             <div className='space-y-4'>
@@ -132,21 +132,21 @@ export default function Projects() {
           </div>
 
           {/* Section 3: The Cliffs Details */}
-          <div className='lg:max-w-[900px] lg:min-w-[900px] w-full max-w-[900px] px-4 sm:px-6 md:pl-6 lg:pl-8 text-center md:text-left space-y-6'>
+          <div className='lg:max-w-[900px] lg:min-w-[900px] w-full max-w-[900px] px-4 sm:px-6 md:pl-6 lg:pl-8 md:text-left text-center space-y-6'>
             <div className='space-y-4'>
-              <p className='text-[#e7e7dc] font-[300] text-base leading-relaxed text-center md:text-left'>
+              <p className='text-[#e7e7dc] font-[300] text-base leading-relaxed'>
                 The Quarry redefines modern living with its seamless integration of natural materials and clean lines. Each
                 A beachfront property that&apos;s been designed to take full advantage of its stunning ocean views. Between indoor comfort and the surrounding landscape, creating
                 a sanctuary that feels both luxurious and organic.
               </p>
 
-              <p className='text-[#e7e7dc] font-[300] text-base leading-relaxed text-center md:text-left'>
+              <p className='text-[#e7e7dc] font-[300] text-base leading-relaxed'>
                 A minimalist apartment that&apos;s been transformed into a serene retreat, with custom built-ins and a neutral color palette. Built with attention to craftsmanship
                 and sustainability, the result is a home that stands as a testament to thoughtful, intentional design.
               </p>
 
               <div className='pt-4'>
-                <h2 className='text-[#e7e7dc] font-[300] text-lg uppercase text-center md:text-left'>THE CLIFFS</h2>
+                <h2 className='text-[#e7e7dc] font-[300] text-lg uppercase'>THE CLIFFS</h2>
                 <div className='w-8 h-px bg-white/50 mt-2 mx-auto md:mx-0'></div>
               </div>
             </div>
@@ -169,27 +169,27 @@ export default function Projects() {
           </div>
 
           {/* Investment & Contact Section */}
-          <div className='lg:max-w-[900px] lg:min-w-[900px] w-full max-w-[900px] pl-4 md:pl-6 lg:pl-8 mt-8 space-y-6'>
+          <div className='lg:max-w-[900px] lg:min-w-[900px] w-full max-w-[900px] px-4 sm:px-6 md:pl-6 lg:pl-8 mt-8 space-y-6 md:text-left text-center'>
             <div>
-              <p className='text-[#d5d5c8] font-[300] text-base leading-relaxed text-center md:text-left'>
-                As an investment, The Quarry offers a fixed return of 14–20% annually, with capital protected via a
-                ring-fenced SPV and detailed development guarantees. Investors are not just backing a build — they&apos;re
-                aligning with a new, grounded vision of sustainable living. This is a home that feels like a turning point — 
+              <p className='text-[#d5d5c8] font-[300] text-base leading-relaxed'>
+                As an investment, The Quarry offers a fixed return of 14&mdash;20% annually, with capital protected via a
+                ring-fenced SPV and detailed development guarantees. Investors are not just backing a build &mdash; they&apos;re
+                aligning with a new, grounded vision of sustainable living. This is a home that feels like a turning point &mdash; 
                 for design, for lifestyle, and for what comes next.
               </p>
             </div>
             
             <div className='pt-2'>
               <Link href={"/contact"}>
-                <h2 className='text-[#d5d5c8] font-[300] text-lg uppercase text-center md:text-left'>Get in Touch</h2>
+                <h2 className='text-[#d5d5c8] font-[300] text-lg uppercase'>Get in Touch</h2>
                 <div className='w-8 h-px bg-[#d5d5c8]/50 mt-2 mx-auto md:mx-0'></div>
               </Link>
-              <p className='text-[#d5d5c8] font-[300] text-base leading-relaxed mt-2 text-center md:text-left'>
+              <p className='text-[#d5d5c8] font-[300] text-base leading-relaxed mt-2'>
                 Interested in working together? We&apos;d love to hear about your project.
               </p>
             </div>
           </div>
-          <div className='text-[#d5d5c8] font-[300] text-base leading-relaxed mt-4 max-w-2xl mx-auto'>
+          <div className='text-[#d5d5c8] font-[300] text-base leading-relaxed mt-4 max-w-2xl mx-auto md:text-left text-center'>
             <p>Each project is a unique response to its environment and the people who inhabit it. We believe in creating spaces that feel both timeless and of their moment, where every detail serves a purpose and contributes to the whole.</p>
             <p className='mt-4'>Our approach is collaborative and considered, working closely with our clients to understand their vision and bring it to life in ways that exceed their expectations.</p>
           </div>
