@@ -173,7 +173,7 @@ export default function Projects() {
             <div>
               <p className='text-[#d5d5c8] font-[300] text-base leading-relaxed text-center md:text-left'>
                 As an investment, The Quarry offers a fixed return of 14–20% annually, with capital protected via a
-                ring-fenced SPV and detailed development guarantees. Investors are not just backing a build — they're
+                ring-fenced SPV and detailed development guarantees. Investors are not just backing a build — they&apos;re
                 aligning with a new, grounded vision of sustainable living. This is a home that feels like a turning point — 
                 for design, for lifestyle, and for what comes next.
               </p>
