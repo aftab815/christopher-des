@@ -120,7 +120,7 @@ export default function Projects() {
 
               <div className='bg-[#d5d5c8]/10 p-6 rounded-lg border border-[#d5d5c8]/20'>
                 <p className='text-[#d5d5c8] font-[300] text-base leading-relaxed italic'>
-&ldquo;Designed for connection—to nature, to art, and to each other—this home features open, flowing spaces that encourage gathering and contemplation in equal measure.&rdquo;
+                  &ldquo;Designed for connection—to nature, to art, and to each other—this home features open, flowing spaces that encourage gathering and contemplation in equal measure.&rdquo;
                 </p>
               </div>
 
@@ -204,9 +204,13 @@ export default function Projects() {
                 <div className='w-8 h-px bg-[#d5d5c8]/50 mt-2 mx-auto md:mx-0'></div>
               </Link>
               <p className='text-[#d5d5c8] font-[300] text-base leading-relaxed mt-2 text-center md:text-left'>
-                Interested in working together? We'd love to hear about your project.
+                Interested in working together? We&apos;d love to hear about your project.
               </p>
             </div>
+          </div>
+          <div className='text-[#d5d5c8] font-[300] text-base leading-relaxed mt-4 max-w-2xl mx-auto'>
+            <p>Each project is a unique response to its environment and the people who inhabit it. We believe in creating spaces that feel both timeless and of their moment, where every detail serves a purpose and contributes to the whole.</p>
+            <p className='mt-4'>Our approach is collaborative and considered, working closely with our clients to understand their vision and bring it to life in ways that exceed their expectations.</p>
           </div>
           <div className='hidden lg:block lg:min-w-[2vw]'></div>
         </HorizontalScrollContainer>
