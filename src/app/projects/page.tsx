@@ -1,6 +1,5 @@
 "use client";
 import { useRef } from "react";
-import { useRouter } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -17,32 +16,12 @@ import Image3 from "@/assets/projects/image3.jpeg";
 import Image4 from "@/assets/projects/image4.jpeg";
 import Image5 from "@/assets/projects/image5.jpeg";
 import Image6 from "@/assets/projects/image6.jpeg";
-import Image7 from "@/assets/projects/image7.jpeg";
-import Image8 from "@/assets/projects/image8.jpeg";
-import Image9 from "@/assets/projects/image9.jpeg";
-import MobileBG from "@/../public/media/mobile projects bg.png";
-
-// types
-interface ScrollInfo {
-  scrollPosition: number;
-  maxScroll: number;
-  scrollPercentage: number;
-  direction: "left" | "right";
-}
 
 export default function Projects() {
   const scrollContainerRef = useRef<HorizontalScrollContainerRef>(null);
 
-  const scrollToStart = () => {
-    scrollContainerRef.current?.resetScroll();
-  };
-
-  const handleScrollChange = () => {
-    // Scroll change handler for future use
-  };
-
   return (
-    <div className='relative min-h-screen'>
+    <div className='relative min-h-screen bg-black text-white overflow-hidden'>
       {/* Desktop Background */}
       <div className='hidden md:block absolute inset-0 z-0'>
         <Image
@@ -53,6 +32,7 @@ export default function Projects() {
           priority
         />
       </div>
+      
       {/* Mobile Background */}
       <div className='md:hidden absolute inset-0 z-0'>
         <Image
@@ -65,6 +45,7 @@ export default function Projects() {
           sizes="100vw"
         />
       </div>
+      
       <div className='absolute inset-0 bg-black/20 z-0'></div>
 
       {/* Header with Logo and Menu */}
@@ -72,7 +53,7 @@ export default function Projects() {
 
       {/* Main Content */}
       <main className='relative z-10 container pt-24 sm:pt-28 md:pt-32 lg:pt-36 xl:pt-36 pb-8'>
-        <HorizontalScrollContainer ref={scrollContainerRef} onScrollChange={handleScrollChange}>
+        <HorizontalScrollContainer ref={scrollContainerRef} onScrollChange={() => {}}>
           {/* Section 1: Our Projects */}
           <div className='lg:max-w-[900px] lg:min-w-[900px] w-full max-w-[900px] px-4 sm:px-6 md:pl-6 lg:pl-8 text-center md:text-left space-y-3'>
             <h1 className='text-[#d5d5c8] font-serif text-[24px] uppercase tracking-wider leading-tight'>OUR PROJECTS</h1>
@@ -120,7 +101,7 @@ export default function Projects() {
 
               <div className='bg-[#d5d5c8]/10 p-6 rounded-lg border border-[#d5d5c8]/20'>
                 <p className='text-[#d5d5c8] font-[300] text-base leading-relaxed italic'>
-                  &ldquo;Designed for connection—to nature, to art, and to each other—this home features open, flowing spaces that encourage gathering and contemplation in equal measure.&rdquo;
+                  &quot;Designed for connection—to nature, to art, and to each other—this home features open, flowing spaces that encourage gathering and contemplation in equal measure.&quot;
                 </p>
               </div>
 
